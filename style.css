@@ -3,6 +3,10 @@
 
 
 }
+ .cabeçalho{
+    image-rendering: auto;
+
+}
 .container{
     text-align: 100px;
     font-size: 50px;
