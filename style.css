@@ -4,8 +4,8 @@
 
 }
  .cabeçalho{
-   height: 30px;
-   width:  50px;
+    display: flex;
+    
 
 }
 .container{
