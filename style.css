@@ -4,7 +4,8 @@
 
 }
  .cabeçalho{
-    image-rendering: auto;
+   height: 30px;
+   width:  50px;
 
 }
 .container{
