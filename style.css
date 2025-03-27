@@ -4,9 +4,13 @@
 
 }
  .cabeçalho{
+    background-color: black;
     display: flex;
+    justify-content:space-around;
    text-align: center;
 
+   align-items:center
+   padding center 0;
 }
 
 
