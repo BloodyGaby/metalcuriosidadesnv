@@ -30,6 +30,18 @@ body {
     margin: 0 auto 20px;
 }
 
+.imageMetallica{
+    position:absolute;
+    top: 15%;
+    right:20%;
+    transform: translate(-50%, -50%);
+    
+    
+    
+    display: flex;
+
+}
+
 .images {
     display: flex;
     flex-wrap: wrap;
