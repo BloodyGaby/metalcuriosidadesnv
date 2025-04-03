@@ -25,7 +25,7 @@ body {
     padding: 20px;
 }
 
-.description {
+.texto{
     max-width: 600px;
     margin: 0 auto 20px;
 }
@@ -54,28 +54,6 @@ body {
     border-radius: 10px;
 }
 
-.image-container:hover {
-    transform: scale(1.2);
-}
-
-.image-container::after {
-    content: attr(data-info);
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.image-container:hover::after {
-    opacity: 1;
-}
 
 .footer {
     background-color: #222;
