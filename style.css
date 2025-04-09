@@ -9,7 +9,7 @@ body {
 }
 
 /* Título principal */
-.titulo {
+.header {
     font-size: 2.5em;
     font-weight: bold;
     padding: 20px;
@@ -24,34 +24,61 @@ body {
     display: block;
 }
 
-/* Nome da banda nos banners */
-.banner .band-name {
-    font-weight: bold;
-    font-size: 18px;
-    margin-top: 10px;
+/* Container central */
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-/* Container de layout com colunas e texto central */
+/* Texto central explicativo */
+.description {
+    font-size: 1.2em;
+    margin: 40px 0;
+    line-height: 1.6;
+}
+
+/* Layout geral com colunas e texto central */
 .layout {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 20px;
+    justify-content: space-between;
+    align-items: center; /* centraliza verticalmente */
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
+/* Colunas laterais */
 .coluna {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    width: 25%;
 }
 
-.banda {
+/* Texto central */
+.texto-central {
+    width: 45%;
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 20px;
+}
+
+/* Grid das imagens */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Container individual de imagem */
+.image-container {
     width: 200px;
     text-align: center;
 }
 
-.banda img {
+/* Imagem da banda */
+.image-container img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -60,25 +87,23 @@ body {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+/* Removido o efeito blur e o "saltar" */
+.image-container img:hover {
+    filter: none;
+    transform: none;
+}
+
 /* Nome da banda acima da imagem */
-.banda .nome {
+.band-name {
     font-weight: bold;
     margin: 10px 0 5px;
     font-size: 16px;
 }
 
 /* Fonte ou descrição abaixo da imagem */
-.banda .desc {
+.image-description {
     font-size: 14px;
     color: #ccc;
-}
-
-/* Texto central explicativo */
-.texto-central {
-    max-width: 400px;
-    padding: 20px;
-    font-size: 1.2em;
-    line-height: 1.6;
 }
 
 /* Rodapé */
@@ -105,26 +130,17 @@ body {
 
 /* Responsividade para celular */
 @media (max-width: 768px) {
-    .layout {
+    .image-grid {
         flex-direction: column;
         align-items: center;
     }
 
-    .coluna {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .banda {
+    .image-container {
         width: 90%;
     }
 
     .instagram-icon {
         width: 20px;
         height: 20px;
-    }
-
-    .texto-central {
-        max-width: 90%;
     }
 }
