@@ -94,8 +94,8 @@ body {
 
 /* Ícone do Instagram */
 .instagram-icon {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     margin-top: 10px;
     transition: transform 0.2s ease;
 }
@@ -113,5 +113,10 @@ body {
 
     .image-container {
         width: 90%;
+    }
+
+    .instagram-icon {
+        width: 20px;
+        height: 20px;
     }
 }
