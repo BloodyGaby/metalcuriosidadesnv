@@ -5,36 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Metal</title>
   <link rel="stylesheet" href="style.css">
-   <div id="acessibilidade" class="menu-acessibilidade"> 
-    <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
-    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-        <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
-        <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
-        <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
-    </div>
-  
 </head>
 <body>
 
-  
+  <!-- Menu de Acessibilidade -->
+  <div id="acessibilidade" class="menu-acessibilidade">
+    <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+        <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+        <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+        <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alternar o contraste de cores">
+          <i class="bi bi-shadows"></i>
+        </button>
+    </div>
+  </div>
 
+  <!-- Título Principal -->
   <h1 class="titulo">Metal</h1>
- 
 
   <!-- Banner Superior -->
   <div class="banner">
     <div class="band-name">Motörhead</div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Motorhead_rome_2007.jpg/640px-Motorhead_rome_2007.jpg" alt="Metallica" 
-  
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Motorhead_rome_2007.jpg/640px-Motorhead_rome_2007.jpg" alt="Motörhead">
     <div class="image-description">
-      Fonte: mistress_f from rome, italy, CC BY 2.0
+      Fonte: mistress_f from Rome, Italy, CC BY 2.0
       <a href="" target="_blank">via Wikimedia Commons</a>
     </div>
   </div>
 
-  <!-- Layout com colunas laterais e texto central -->
+  <!-- Layout com Colunas -->
   <div class="layout">
-    <!-- Coluna Esquerda -->
     <div class="coluna">
       <div class="banda">
         <div class="nome">Metallica</div>
@@ -63,19 +63,16 @@
       </div>
     </div>
 
-    <!-- Texto Central -->
     <div class="texto-central">
       <p>O metal é um gênero musical que surgiu no final dos anos 60, caracterizado por guitarras distorcidas, letras profundas e um estilo impactante. Bandas como Led Zeppelin, Black Sabbath e Iron Maiden moldaram esse estilo que continua influente até hoje.</p>
     </div>
 
-    <!-- Coluna Direita -->
     <div class="coluna">
       <div class="banda">
         <div class="nome">Slipknot</div>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Slipknot_at_the_Download_Festival_in_2009_.jpg/640px-Slipknot_at_the_Download_Festival_in_2009_.jpg" alt="Slipknot">
         <div class="desc">
           Fonte: Raspyprince, CC BY-SA 4.0
-          <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">via Wikimedia Commons</a>
         </div>
       </div>
 
@@ -101,7 +98,7 @@
   <!-- Banner Inferior -->
   <div class="banner">
     <div class="band-name">Iron Maiden</div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/IronMaidenO2_270517-24_%2834145654484%29.jpg/640px-IronMaidenO2_270517-24_%2834145654484%29.jpg" alt="Banner inferior">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/IronMaidenO2_270517-24_%2834145654484%29.jpg/640px-IronMaidenO2_270517-24_%2834145654484%29.jpg" alt="Iron Maiden">
     <div class="image-description">
       Fonte: Raph_PH, CC BY 2.0
       <a href="https://creativecommons.org/licenses/by/2.0" target="_blank">via Wikimedia Commons</a>
@@ -115,7 +112,10 @@
       <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="instagram-icon">
     </a>
   </footer>
+
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
