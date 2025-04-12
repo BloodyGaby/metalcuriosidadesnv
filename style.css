@@ -9,40 +9,46 @@ body {
 }
 
 /* Título principal */
-.header {
+.titulo {
     font-size: 2.5em;
     font-weight: bold;
     padding: 20px;
     background-color: #222;
+    margin: 0;
 }
 
 /* Banners superior e inferior */
+.banner {
+    margin-bottom: 40px;
+}
+
 .banner img {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
     display: block;
+    border-radius: 10px;
 }
 
-/* Container central */
-.container {
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
+/* Nome da banda no banner */
+.banner .band-name {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 10px 0 5px;
 }
 
-/* Texto central explicativo */
-.description {
-    font-size: 1.2em;
-    margin: 40px 0;
-    line-height: 1.6;
+/* Descrição abaixo da imagem do banner */
+.banner .image-description {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 5px;
 }
 
 /* Layout geral com colunas e texto central */
 .layout {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* centraliza verticalmente */
+    align-items: flex-start;
     max-width: 1200px;
     margin: auto;
     padding: 40px 20px;
@@ -62,23 +68,18 @@ body {
     margin: 0 20px;
 }
 
-/* Grid das imagens */
-.image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 40px;
+/* Banda (nome + imagem + descrição) */
+.banda {
+    margin-bottom: 30px;
 }
 
-/* Container individual de imagem */
-.image-container {
-    width: 200px;
-    text-align: center;
+.nome {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
-/* Imagem da banda */
-.image-container img {
+.banda img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -88,22 +89,15 @@ body {
 }
 
 /* Removido o efeito blur e o "saltar" */
-.image-container img:hover {
+.banda img:hover {
     filter: none;
     transform: none;
 }
 
-/* Nome da banda acima da imagem */
-.band-name {
-    font-weight: bold;
-    margin: 10px 0 5px;
-    font-size: 16px;
-}
-
-/* Fonte ou descrição abaixo da imagem */
-.image-description {
+.desc {
     font-size: 14px;
     color: #ccc;
+    margin-top: 5px;
 }
 
 /* Rodapé */
@@ -130,13 +124,15 @@ body {
 
 /* Responsividade para celular */
 @media (max-width: 768px) {
-    .image-grid {
+    .layout {
         flex-direction: column;
         align-items: center;
     }
 
-    .image-container {
+    .coluna,
+    .texto-central {
         width: 90%;
+        margin-bottom: 40px;
     }
 
     .instagram-icon {
