@@ -4,6 +4,7 @@
 
 :root {
     --vermelho-claro: #e61203;
+    --vermelho-escuro: #8b0000;
     --alto-contraste-fundo: #000000;
     --alto-contraste-texto: #ffffff;
     --alto-contraste-link: #800202;
@@ -74,7 +75,7 @@ section {
 
 /* Estilização do botão de acessibilidade */
 #botao-acessibilidade {
-    background-color: var(--laranja-claro);
+    background-color: var(--vermelho-escuro);
     color: white;
     border: none;
     border-radius: 5px;
@@ -82,10 +83,15 @@ section {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 #botao-acessibilidade:hover {
     background-color: #a80505;
+}
+
+#botao-acessibilidade[aria-expanded="true"] {
+    background-color: var(--vermelho-claro);
 }
 
 /* Alterações de acessibilidade */
@@ -183,7 +189,6 @@ section {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Removido o efeito blur e o "saltar" */
 .banda img:hover {
     filter: none;
     transform: none;
