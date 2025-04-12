@@ -9,8 +9,6 @@
     --alto-contraste-link: #ffd700;
 }
 
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -19,6 +17,7 @@ body {
     background-color: #111;
     color: white;
 }
+
 /* Título principal */
 .titulo {
     font-size: 2.5em;
@@ -54,15 +53,16 @@ body {
     color: #ccc;
     margin-top: 5px;
 }
+
 section {
     padding-bottom: 5rem;
 }
-
 
 .nav-link {
     color: #CB6D43;
     font-weight: 600;
 }
+
 .botao-inicio {
     background-color: var(--laranja-claro);
     border-radius: 30px;
@@ -70,60 +70,74 @@ section {
     width: 14em;
     height: 3em;
     align-content: center;
-
 }
 
-.display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
+/* Estilização do botão de acessibilidade */
+#botao-acessibilidade {
+    background-color: var(--laranja-claro);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
-.menu-acessibilidade{
+
+#botao-acessibilidade:hover {
+    background-color: #e77b2a;
+}
+
+/* Alterações de acessibilidade */
+.menu-acessibilidade {
     position: fixed;
-    top:2rem;
-    right:20px;
+    top: 2rem;
+    right: 20px;
     z-index: 1000;
 }
 
-.rotacao-botao{
+.rotacao-botao {
     transform: rotate(-90deg);
     transform-origin: right center;
 }
 
-.opcoes-acessibilidade{
-    margin-top:10px;
+.opcoes-acessibilidade {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.opcoes-acessibilidade button{
+.opcoes-acessibilidade button {
     margin-bottom: 5px;
 }
-.apresenta-lista{
+
+.apresenta-lista {
     display: none;
 }
 
-.alto-contraste{
+/* Estilo para contraste */
+.alto-contraste {
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
 }
 
 .alto-contraste header,
 .alto-contraste footer,
-.alto-contraste .formulario{
+.alto-contraste .formulario {
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
 }
 
-.alto-contraste .nav-link{
+.alto-contraste .nav-link {
     color: var(--alto-contraste-link);
 }
 
 .alto-contraste .botao-inicio,
 .alto-contraste .formulario button,
-.alto-contraste .btn-primary{
+.alto-contraste .btn-primary {
     background-color: var(--alto-contraste-link);
-    color: var(--alto-contraste-fundo)
+    color: var(--alto-contraste-fundo);
 }
-
 
 /* Layout geral com colunas e texto central */
 .layout {
@@ -148,7 +162,6 @@ section {
     text-align: center;
     margin: 0 20px;
 }
-
 
 /* Banda (nome + imagem + descrição) */
 .banda {
