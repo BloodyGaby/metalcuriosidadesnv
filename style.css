@@ -62,11 +62,12 @@ body {
 /* Texto central */
 .texto-central {
     width: 45%;
-    font-size: 1.2em;
+    font-size: 1.8em;
     line-height: 1.6;
     text-align: justify;
     margin: 0 20px;
 }
+
 
 /* Banda (nome + imagem + descrição) */
 .banda {
